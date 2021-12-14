@@ -83,9 +83,7 @@ The common algorithm:
 - Data engine supports multi-threaded data calculation to handle a large amount of data efficiently.
 - An optimized graph of data operations.
 
-Our experiments showed that DevExpress Data Processing API can be faster or equal to Parallel Linq in aggregation calculation tasks (grouping and sums calculation). <!--Review the following example for the comparison result:  TODO 
-
-If you are interested in performance comparison, please contact us and we will give you the test results: [Support Center](https://supportcenter.devexpress.com/ticket/list).-->
+Our experiments showed that DevExpress Data Processing API can be faster or equal to Parallel Linq in aggregation calculation tasks (grouping and sums calculation).
 
 > Note that we made a number of assumptions in the MVP implementation which do not fully reveal the performance. At the same time, performance can depend on many factors (for example, just-in-time (JIT) compilation). If you encounter performance issues, please fell free to describe your scenario: [Support Center](https://supportcenter.devexpress.com/ticket/list).
 

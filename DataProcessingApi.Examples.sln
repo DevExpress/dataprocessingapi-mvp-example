@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31829.152
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DevExpress.DataProcessingAPI.ConsoleExample", "DevExpress.DataProcessingAPI.ConsoleExample\DevExpress.DataProcessingAPI.ConsoleExample.csproj", "{205E0C33-590E-4737-A09D-570F2976D4C6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleExample", "ConsoleExample\DevExpress.DataProcessingAPI.ConsoleExample.csproj", "{205E0C33-590E-4737-A09D-570F2976D4C6}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DevExpress.DataProcessingAPI.CodeExamples", "DevExpress.DataProcessingAPI.CodeExamples\DevExpress.DataProcessingAPI.CodeExamples.csproj", "{0F2B3ACC-8A60-4C67-93FB-CC46179CEDB5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CodeExamples", "CodeExamples\DevExpress.DataProcessingAPI.CodeExamples.csproj", "{0F2B3ACC-8A60-4C67-93FB-CC46179CEDB5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

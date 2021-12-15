@@ -6,7 +6,7 @@ using System.Linq;
 using DevExpress.DataProcessing;
 using DevExpress.DataProcessingApi.Model;
 
-namespace DevExpress.DataProcessingAPI.CodeSamples {
+namespace DevExpress.DataProcessingAPI.PerformanceExample {
     public class Program {
 
         public static void Main(string[] args) {

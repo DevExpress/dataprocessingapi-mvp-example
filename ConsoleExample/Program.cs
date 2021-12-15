@@ -1,7 +1,5 @@
 ﻿using System;
 using System.IO;
-using DevExpress.DataAccess.Excel;
-using DevExpress.DataProcessing;
 using DevExpress.DataProcessing.InMemoryDataProcessor;
 using DevExpress.DataProcessingApi.Model;
 
@@ -48,8 +46,8 @@ namespace DevExpress.DataProcessingAPI.ConsoleExample {
             var filePath = resultFlow.Execute();
 
             Console.WriteLine($"The resulting file is saved to {filePath}");
-            Console.WriteLine("Press any key to close this window...");
-            Console.ReadLine();
+            Console.WriteLine("Press any key to continue...");
+            Console.ReadKey();
         }
     }
 }

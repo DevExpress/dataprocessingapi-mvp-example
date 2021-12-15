@@ -85,7 +85,7 @@ The common algorithm:
 
 Our experiments showed that DevExpress Data Processing API can be faster or equal to Parallel Linq in aggregation calculation tasks (grouping and sums calculation).
 
-> Note that we made a number of assumptions in the MVP implementation which do not fully reveal the performance. At the same time, performance can depend on many factors (for example, just-in-time (JIT) compilation). If you encounter performance issues, please fell free to describe your scenario in our [Support Center].(https://supportcenter.devexpress.com/ticket/list).
+> Note that we made a number of assumptions in the MVP implementation which do not fully reveal the performance. At the same time, performance can depend on many factors (for example, just-in-time (JIT) compilation). If you encounter performance issues, please fell free to describe your scenario in our [Support Center](https://supportcenter.devexpress.com/ticket/list).
 
 
 ## Product Development Plans

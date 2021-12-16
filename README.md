@@ -1,8 +1,8 @@
 # DevExpress Data Processing API (MVP)
 
-DevExpress Data Processing API is a pre-released version of a new product and is therefore not yet a part of the DevExpress product line.
+DevExpress Data Processing API is a prototype (MVP) of a new product and is therefore not yet a part of the DevExpress product line.
 
-This example contains an MVP version and is created to collect feedback and usage data. If you are interested in DevExpress Data Processing API, leave a comment under our blog post or create a ticket in our [Support Center](https://supportcenter.devexpress.com/ticket/list).
+This example is created to collect feedback and usage data. If you are interested in DevExpress Data Processing API, leave a comment under our blog post or create a ticket in our [Support Center](https://supportcenter.devexpress.com/ticket/list).
 
 ## What is the DevExpress Data Processing API
 

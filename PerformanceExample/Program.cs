@@ -12,7 +12,7 @@ namespace DevExpress.DataProcessingAPI.PerformanceExample {
             Console.WriteLine($"Preparing data...");
             var data = PerformanceTestData.Generate(5_000_000);
 
-            RunTest("DevExpress DataProcessingApi", () => RunDataProcessingApi(data));
+            RunTest("DevExpress Data-Processing API", () => RunDataProcessingApi(data));
             RunTest("Microsoft Linq", () => RunLinq(data));
             RunTest("Microsoft Parallel Linq", () => RunParallelLinq(data));
 

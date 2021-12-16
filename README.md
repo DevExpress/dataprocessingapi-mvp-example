@@ -22,16 +22,51 @@ The main features of the presented library:
 - Debug your app using a wide range of API.
 - Transform your data quickly from raw data to final output.
 
-## How to Launch the Project
+## About Example
 
-The following repository contains an example that transforms the user survey data in the JSON format and data about users from an XLSX file in the following way:
+The following repository contains a .NET 5.0 solution with three projects that show how to use DevExpress Data-Processing API.
+
+To launch the example, you need to update your DevExpress NuGet packages to **v21.2.4**. You can find the instructions for upgrading in the following section: [Install DevExpress Controls Using NuGet Packages](https://docs.devexpress.com/GeneralInformation/115912/installation/install-devexpress-controls-using-nuget-packages).
+
+> For .NET Framework, reference the [DevExpress.DataProcessingApi.MVP.NetFramework.dll](dll) and DevExpress libraries v.21.2.4 in your project.
+
+
+### ConsoleExample
+
+**View file**: [Program.cs](./ConsoleExample/Program.cs)
+
+The following project is an example that transforms the user survey data in the JSON format and data about users from an XLSX file in the following way:
 - Joins these two data flows to get a one data source. The "Feature list" column is an array of data. The `Unfold` operation creates a new row for each item in the array.
 - Aggregates data by "RegionCountryName" and "Feature list".
 - Calculates the top 3 achievements for each country.
 - Sorts data.
 - Uploads data to an XLSX file.
 
-To launch the example, you need to update your DevExpress NuGet packages to **v21.2.4**. You can find the detailed instructions in the following section: [Install DevExpress Controls Using NuGet Packages](https://docs.devexpress.com/GeneralInformation/115912/installation/install-devexpress-controls-using-nuget-packages).
+The resulting XLSX file:
+
+![](./images/survey-result.png)
+
+### CodeSamples
+
+**View file**: [Program.cs](./CodeSamples/Program.cs)
+
+The following project contains unit tests that cover different scenarios.
+
+You can use [Test Explorer](https://docs.microsoft.com/en-us/visualstudio/test/run-unit-tests-with-test-explorer) in Visual Studio to launch and debug these code samples or launch them in a console application (view the `Main()` function for details).
+
+![](./images/test-explorer.png)
+
+### PerformanceExample
+
+**View file**: [Program.cs](./PerformanceExample/Program.cs)
+
+This example compares different data processing technologies:
+
+- DevExpress Data-Processing API
+- Microsoft Linq
+- Microsoft Parallel Linq
+
+Our experiments showed that DevExpress Data Processing API can be faster or equal to Parallel Linq in aggregation calculation tasks (grouping and sums calculation).
 
 ## How to Work with this API
 
@@ -83,10 +118,7 @@ The common algorithm:
 - Data engine supports multi-threaded data calculation to handle a large amount of data efficiently.
 - An optimized graph of data operations.
 
-Our experiments showed that DevExpress Data Processing API can be faster or equal to Parallel Linq in aggregation calculation tasks (grouping and sums calculation).
-
 > Note that we made a number of assumptions in the MVP implementation which do not fully reveal the performance. At the same time, performance can depend on many factors (for example, just-in-time (JIT) compilation). If you encounter performance issues, please fell free to describe your scenario in our [Support Center](https://supportcenter.devexpress.com/ticket/list).
-
 
 ## Product Development Plans
 

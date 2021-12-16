@@ -10,8 +10,6 @@ using Xunit;
 using Newtonsoft.Json;
 
 namespace DevExpress.DataProcessingAPI.CodeSamples {
-
-
     public class Program {
 
         public static void Main(string[] args) {

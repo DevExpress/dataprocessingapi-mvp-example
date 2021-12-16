@@ -8,7 +8,6 @@ using DevExpress.DataProcessingApi.Model;
 
 namespace DevExpress.DataProcessingAPI.PerformanceExample {
     public class Program {
-
         public static void Main(string[] args) {
             Console.WriteLine($"Preparing data...");
             var data = PerformanceTestData.Generate(5_000_000);
@@ -81,14 +80,12 @@ namespace DevExpress.DataProcessingAPI.PerformanceExample {
     }
 
     class PerformanceTestData {
-
         public string StringProperty1 { get; set; }
         public string StringProperty2 { get; set; }
         public string StringProperty3 { get; set; }
         public string StringProperty4 { get; set; }
         public int IntProperty { get; set; }
         public double DoubleProperty { get; set; }
-
 
         public static IList<PerformanceTestData> Generate(int rowCount) {
             var res = new PerformanceTestData[rowCount];
@@ -115,6 +112,5 @@ namespace DevExpress.DataProcessingAPI.PerformanceExample {
         public Int64 IntPropertySum { get; set; }
         public double DoublePropertySum { get; set; }
         public double DoublePropertyAverage { get; set; }
-    }
-   
+    }  
 }

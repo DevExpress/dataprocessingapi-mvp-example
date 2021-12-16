@@ -1,12 +1,6 @@
 # DevExpress Data Processing API (MVP)
 
-DevExpress Data Processing API is a new product that is currently in development and is therefore not yet a part of the DevExpress product line.
-
-This example is created to collect feedback and usage data. If you are interested in DevExpress Data Processing API, leave a comment under our blog post or create a ticket in our Support Center.
-
-## What is the DevExpress Data Processing API
-
-DevExpress Data Processing API is a .NET library that allows you to convert your data (including ETL and data analysis) into usable and desired form.
+**DevExpress Data Processing API** is a .NET library that allows you to convert your data (including ETL and data analysis) into usable and desired form.
 
 Typical scenarios:
 
@@ -22,16 +16,55 @@ The main features of the presented library:
 - Debug your app using a wide range of API.
 - Transform your data quickly from raw data to final output.
 
-## How to Launch the Project
+> DevExpress Data Processing API is a prototype (MVP) of a new product and is therefore not yet a part of the DevExpress product line.
 
-The following repository contains an example that transforms the user survey data in the JSON format and data about users from an XLSX file in the following way:
+This example is created to collect feedback and usage data. If you are interested in DevExpress Data Processing API, leave a comment under our blog post or create a ticket in our [Support Center](https://supportcenter.devexpress.com/ticket/list).
+
+## About Example
+
+The following repository contains a .NET 5.0 solution with three projects that show how to use DevExpress Data-Processing API.
+
+To launch the example, you need to update your DevExpress NuGet packages to **v21.2.4**. You can find the instructions for upgrading in the following section: [Install DevExpress Controls Using NuGet Packages](https://docs.devexpress.com/GeneralInformation/115912/installation/install-devexpress-controls-using-nuget-packages).
+
+> For .NET Framework, reference the [DevExpress.DataProcessingApi.MVP.NetFramework.dll](dll) and DevExpress libraries v.21.2.4 in your project.
+
+
+### ConsoleExample
+
+**View file**: [Program.cs](./ConsoleExample/Program.cs)
+
+The following project is an example that transforms the user survey data in the JSON format and data about users from an XLSX file in the following way:
 - Joins these two data flows to get a one data source. The "Feature list" column is an array of data. The `Unfold` operation creates a new row for each item in the array.
 - Aggregates data by "RegionCountryName" and "Feature list".
 - Calculates the top 3 achievements for each country.
 - Sorts data.
 - Uploads data to an XLSX file.
 
-To launch the example, you need to update your DevExpress NuGet packages to **v21.2.4**. You can find the detailed instructions in the following section: [Install DevExpress Controls Using NuGet Packages](https://docs.devexpress.com/GeneralInformation/115912/installation/install-devexpress-controls-using-nuget-packages).
+The resulting XLSX file:
+
+![survey-result](./Images/survey-result.png)
+
+### CodeSamples
+
+**View file**: [Program.cs](./CodeSamples/Program.cs)
+
+The following project contains unit tests that cover different scenarios.
+
+You can use [Test Explorer](https://docs.microsoft.com/en-us/visualstudio/test/run-unit-tests-with-test-explorer) in Visual Studio to launch and debug these code samples or launch them in a console application (view the `Main()` function for details).
+
+![test-explorer](./Images/test-explorer.png)
+
+### PerformanceExample
+
+**View file**: [Program.cs](./PerformanceExample/Program.cs)
+
+This example compares different data processing technologies:
+
+- DevExpress Data-Processing API
+- Microsoft Linq
+- Microsoft Parallel Linq
+
+[More about performance](#performance)
 
 ## How to Work with this API
 
@@ -87,14 +120,14 @@ Our experiments showed that DevExpress Data Processing API can be faster or equa
 
 > Note that we made a number of assumptions in the MVP implementation which do not fully reveal the performance. At the same time, performance can depend on many factors (for example, just-in-time (JIT) compilation). If you encounter performance issues, please fell free to describe your scenario in our [Support Center](https://supportcenter.devexpress.com/ticket/list).
 
-
 ## Product Development Plans
+If we decide to release the product, we plan to develop in the following directions:
 
 - Support more popular data sources and a variety of upload methods.
 - Add more features to solve the most popular ETL and analytics problems.
 - Create tools for developers to simplify the creating and debugging of data flows, including the development of Visual Studio built-in tools.
 - Performance optimization.
 - Improve diagnostic logging and error output.
-- Integration with DevExpress controls: Winforms, WPF, Blazor (as ASP.NET Core Backend)
+- Integration with DevExpress controls: Winforms, WPF, Blazor (as ASP.NET Core Backend).
 
 Your opinion matters to us. Please share your thoughts in comments in our blog post: []().

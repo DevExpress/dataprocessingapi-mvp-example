@@ -1,7 +1,5 @@
 ﻿using System;
 using System.IO;
-using DevExpress.DataAccess.Excel;
-using DevExpress.DataProcessing;
 using DevExpress.DataProcessing.InMemoryDataProcessor;
 using DevExpress.DataProcessingApi.Model;
 
@@ -28,9 +26,8 @@ namespace DevExpress.DataProcessingAPI.ConsoleExample {
 
             var resultFlow = surveyFlow.Join(customersFlow, "Customer ID", "CustomerKey")
                 .Unfold("Feature list")
-                .Aggregate(o => {
-                    o
-                    .GroupBy("RegionCountryName", "Feature list")
+                .Aggregate(e => {
+                    e.GroupBy("RegionCountryName", "Feature list")
                      .CountRows("Count");
                 })
                 .Top(3, "Count", new[] { "RegionCountryName" })
@@ -48,8 +45,8 @@ namespace DevExpress.DataProcessingAPI.ConsoleExample {
             var filePath = resultFlow.Execute();
 
             Console.WriteLine($"The resulting file is saved to {filePath}");
-            Console.WriteLine("Press any key to close this window...");
-            Console.ReadLine();
+            Console.WriteLine("Press any key to continue...");
+            Console.ReadKey();
         }
     }
 }

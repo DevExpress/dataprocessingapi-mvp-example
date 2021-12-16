@@ -1,9 +1,5 @@
 # DevExpress Data Processing API (MVP)
 
-DevExpress Data Processing API is a prototype (MVP) of a new product and is therefore not yet a part of the DevExpress product line.
-
-This example is created to collect feedback and usage data. If you are interested in DevExpress Data Processing API, leave a comment under our blog post or create a ticket in our [Support Center](https://supportcenter.devexpress.com/ticket/list).
-
 ## What is the DevExpress Data Processing API
 
 DevExpress Data Processing API is a .NET library that allows you to convert your data (including ETL and data analysis) into usable and desired form.
@@ -21,6 +17,10 @@ The main features of the presented library:
 - Use functions to clean and structure data alongside with analytical functions.
 - Debug your app using a wide range of API.
 - Transform your data quickly from raw data to final output.
+
+> DevExpress Data Processing API is a prototype (MVP) of a new product and is therefore not yet a part of the DevExpress product line.
+
+This example is created to collect feedback and usage data. If you are interested in DevExpress Data Processing API, leave a comment under our blog post or create a ticket in our [Support Center](https://supportcenter.devexpress.com/ticket/list).
 
 ## About Example
 

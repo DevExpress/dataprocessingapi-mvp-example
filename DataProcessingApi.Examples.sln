@@ -1,13 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 17
-VisualStudioVersion = 17.0.31903.59
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31911.196
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DevExpress.DataProcessingAPI.ConsoleExample", "ConsoleExample\DevExpress.DataProcessingAPI.ConsoleExample.csproj", "{205E0C33-590E-4737-A09D-570F2976D4C6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleExample", "ConsoleExample\ConsoleExample.csproj", "{205E0C33-590E-4737-A09D-570F2976D4C6}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DevExpress.DataProcessingAPI.CodeSamples", "CodeSamples\DevExpress.DataProcessingAPI.CodeSamples.csproj", "{0F2B3ACC-8A60-4C67-93FB-CC46179CEDB5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CodeSamples", "CodeSamples\CodeSamples.csproj", "{0F2B3ACC-8A60-4C67-93FB-CC46179CEDB5}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DevExpress.DataProcessingAPI.PerformanceExamples", "PerformanceExample\DevExpress.DataProcessingAPI.PerformanceExamples.csproj", "{346354E6-7A12-4815-8D29-2EF7F0712DA4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PerformanceExample", "PerformanceExample\PerformanceExample.csproj", "{346354E6-7A12-4815-8D29-2EF7F0712DA4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

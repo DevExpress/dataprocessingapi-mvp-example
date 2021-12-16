@@ -44,7 +44,7 @@ The following project is an example that transforms the user survey data in the 
 
 The resulting XLSX file:
 
-![](./images/survey-result.png)
+![survey-result](./Images/survey-result.png)
 
 ### CodeSamples
 
@@ -54,7 +54,7 @@ The following project contains unit tests that cover different scenarios.
 
 You can use [Test Explorer](https://docs.microsoft.com/en-us/visualstudio/test/run-unit-tests-with-test-explorer) in Visual Studio to launch and debug these code samples or launch them in a console application (view the `Main()` function for details).
 
-![](./images/test-explorer.png)
+![test-explorer](./Images/test-explorer.png)
 
 ### PerformanceExample
 

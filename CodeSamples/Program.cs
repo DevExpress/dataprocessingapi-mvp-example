@@ -45,7 +45,7 @@ namespace DevExpress.DataProcessingAPI.CodeSamples {
             Console.ReadKey();
         }
     }
-    
+
     public class LoadDataSamples {
         [Fact]
         public static void FromExcel() {
@@ -233,7 +233,7 @@ namespace DevExpress.DataProcessingAPI.CodeSamples {
             Assert.Equal(27, result.Rows.Count);
             Helper.PrintDataTable(result);
         }
-        
+
         [Fact]
         public static void TopN() {
             DataTable result = DataFlow
@@ -286,7 +286,7 @@ namespace DevExpress.DataProcessingAPI.CodeSamples {
             Console.WriteLine(result.Count());
         }
     }
-    public  class DebugSamples {
+    public class DebugSamples {
         [Fact]
         public static void DebugNode() {
             string jsonString = DataFlow
@@ -295,30 +295,11 @@ namespace DevExpress.DataProcessingAPI.CodeSamples {
                     Console.WriteLine("res");
                     e.PrintDataTable();
                     var debugData = e.DataTable;
-                // TOOD add comment that you can view currentData in Data Table Visualizer integrated in visual studio
-
-                Helper.AssertDataTableColumns(new[] { "Id", "Name" }, debugData);
+                    Helper.AssertDataTableColumns(new[] { "Id", "Name" }, debugData);
                     Assert.Equal(10, debugData.Rows.Count);
                 })
                 .ToJsonString()
                 .Execute();
-        }
-        [Fact]
-        public static void PerformanceLogging() {
-            var flow = DataFlow
-                .FromExcel(Helper.ExcelFileName, Helper.ExcelWorksheetName)
-                .Filter(row => (double)row["RegionId"] == 6)
-                .Aggregate(e => e
-                        .GroupBy("ProductName")
-                        .Summary("Freight", AggregationType.Sum, "Freight (Sum)")
-                        )
-                .Sort("Freight (Sum)", SortOrder.Ascending)
-                .ToDataTable();
-
-            var data = flow.Execute(ExecutionMode.Release, (performanceLog) => {
-                Console.WriteLine($"Total time: {performanceLog.TotalTime}ms");
-                DataFlow.FromObject(performanceLog.PerformanceTable).ToExcelFile("./performanceTable.xlsx").Execute();
-            });
         }
     }
 

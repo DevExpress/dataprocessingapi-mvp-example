@@ -20,7 +20,7 @@
 
 	<ItemGroup>
 		<Reference Include="DevExpress.DataProcessingApi">
-			<HintPath>..\DevExpress.DataProcessingApi.MVP.dll</HintPath>
+			<HintPath>..\dll\DevExpress.DataProcessingApi.MVP.dll</HintPath>
 		</Reference>
 	</ItemGroup>
 

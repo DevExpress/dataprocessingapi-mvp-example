@@ -18,7 +18,7 @@ The main features of the presented library:
 
 > DevExpress Data Processing API is a prototype (MVP) of a new product and is therefore not yet a part of the DevExpress product line.
 
-This example is created to collect feedback and usage data. If you are interested in DevExpress Data Processing API, leave a comment under our blog post or create a ticket in our [Support Center](https://supportcenter.devexpress.com/ticket/list).
+This example is created to collect feedback and usage data. If you are interested in DevExpress Data Processing API, leave a comment under our [blog post](https://community.devexpress.com/blogs/analytics/archive/2021/12/16/data-processing-api-test-the-early-prototype.aspx) or create a ticket in our [Support Center](https://supportcenter.devexpress.com/ticket/list).
 
 ## About Example
 
@@ -130,4 +130,4 @@ If we decide to release the product, we plan to develop in the following directi
 - Improve diagnostic logging and error output.
 - Integration with DevExpress controls: Winforms, WPF, Blazor (as ASP.NET Core Backend).
 
-Your opinion matters to us. Please share your thoughts in comments in our blog post: []().
+Your opinion matters to us. Please share your thoughts in comments in our blog post: [Data Processing API - Test the early prototype](https://community.devexpress.com/blogs/analytics/archive/2021/12/16/data-processing-api-test-the-early-prototype.aspx).

@@ -26,9 +26,8 @@ namespace DevExpress.DataProcessingAPI.ConsoleExample {
 
             var resultFlow = surveyFlow.Join(customersFlow, "Customer ID", "CustomerKey")
                 .Unfold("Feature list")
-                .Aggregate(o => {
-                    o
-                    .GroupBy("RegionCountryName", "Feature list")
+                .Aggregate(e => {
+                    e.GroupBy("RegionCountryName", "Feature list")
                      .CountRows("Count");
                 })
                 .Top(3, "Count", new[] { "RegionCountryName" })

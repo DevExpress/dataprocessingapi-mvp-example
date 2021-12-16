@@ -47,14 +47,14 @@ namespace DevExpress.DataProcessingAPI.PerformanceExample {
                     .Summary("IntProperty", AggregationType.Sum, "IntPropertySum")
                     .Summary("DoubleProperty", AggregationType.Sum, "DoublePropertySum")
                 )
-                .ToEnumerable<PerfromanceTestDataResult>()
+                .ToEnumerable<PerformanceTestDataResult>()
                 .Execute()
                 .ToArray();
         }
         static void RunParallelLinq(IList<PerformanceTestData> data) {
             var result = from row in data.AsParallel()
                          group row by new { c1 = row.StringProperty1, c2 = row.StringProperty2, c3 = row.StringProperty3, c4 = row.StringProperty4 } into g
-                         select new PerfromanceTestDataResult() {
+                         select new PerformanceTestDataResult() {
                              StringProperty1 = g.Key.c1,
                              StringProperty2 = g.Key.c2,
                              StringProperty3 = g.Key.c3,
@@ -67,7 +67,7 @@ namespace DevExpress.DataProcessingAPI.PerformanceExample {
         static void RunLinq(IList<PerformanceTestData> data) {
             var result = from row in data
                          group row by new { c1 = row.StringProperty1, c2 = row.StringProperty2, c3 = row.StringProperty3, c4 = row.StringProperty4 } into g
-                         select new PerfromanceTestDataResult() {
+                         select new PerformanceTestDataResult() {
                              StringProperty1 = g.Key.c1,
                              StringProperty2 = g.Key.c2,
                              StringProperty3 = g.Key.c3,
@@ -103,7 +103,7 @@ namespace DevExpress.DataProcessingAPI.PerformanceExample {
             return res;
         }
     }
-    class PerfromanceTestDataResult {
+    class PerformanceTestDataResult {
         public string StringProperty1 { get; set; }
         public string StringProperty2 { get; set; }
         public string StringProperty3 { get; set; }

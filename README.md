@@ -2,6 +2,8 @@
 
 **DevExpress Data Processing API** is a .NET library that allows you to convert your data (including ETL and data analysis) into usable and desired form.
 
+![flow](./Images/flow.png)
+
 Typical scenarios:
 
 - Add ETL (Extract, Transform, Load) capabilities to .NET applications.

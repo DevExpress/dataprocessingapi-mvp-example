@@ -22,7 +22,7 @@ The main features of the presented library:
 
 This example is created to collect feedback and usage data. If you are interested in DevExpress Data Processing API, leave a comment under our [blog post](https://community.devexpress.com/blogs/analytics/archive/2021/12/16/data-processing-api-test-the-early-prototype.aspx) or create a ticket in our [Support Center](https://supportcenter.devexpress.com/ticket/list).
 
-## About Example
+## About the Example
 
 The following repository contains a .NET 5.0 solution with three projects that show how to use DevExpress Data-Processing API.
 

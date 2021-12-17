@@ -2,8 +2,6 @@
 
 **DevExpress Data Processing API** is a .NET library that allows you to convert your data (including ETL and data analysis) into usable and desired form.
 
-![flow](./Images/flow.png)
-
 Typical scenarios:
 
 - Add ETL (Extract, Transform, Load) capabilities to .NET applications.
@@ -83,34 +81,34 @@ The common algorithm:
 
 - From a CVS file: `FromCsv`
 - From a database: `FromDatabase`
-- From Excel spreadsheets (XLSX and XLS files): `FromExcel`
-- From a Web Service (JSON): `FromJsonFile` and `FromJsonUrl`
-- From .NET object: `FromObject`
+- From Excel spreadsheets (XLSX and XLS files): [`FromExcel`](https://github.com/DevExpress/dataprocessingapi-mvp-example/blob/main/CodeSamples/Program.cs#L49-L57)
+- From a Web Service (JSON): `FromJsonFile` and [`FromJsonUrl`](https://github.com/DevExpress/dataprocessingapi-mvp-example/blob/main/CodeSamples/Program.cs#L69-L80)
+- From .NET object: [`FromObject`](https://github.com/DevExpress/dataprocessingapi-mvp-example/blob/main/CodeSamples/Program.cs#L59-L67)
 
 ### Transform Data
 
-- Join data from different sources: `Join`
-- Unfold array values and display a new data row for every element in the array: `Unfold`
-- Add columns: `AddColumn` (using criteria operator or in code)
-- Modify column data: `ProcessColumn`
-- Filter data: `Filter` (using criteria operator or in code)
-- Sort data: `Sort`
-- Manage columns: `SelectColumns`, `RenameColumns`, `RemoveColumn`/`RemoveColumns`
+- Join data from different sources: [`Join`](https://github.com/DevExpress/dataprocessingapi-mvp-example/blob/main/CodeSamples/Program.cs#L83-L97)
+- Unfold array values and display a new data row for every element in the array: [`Unfold`](https://github.com/DevExpress/dataprocessingapi-mvp-example/blob/main/ConsoleExample/Program.cs#L28)
+- Add columns: [`AddColumn`](https://github.com/DevExpress/dataprocessingapi-mvp-example/blob/main/CodeSamples/Program.cs#L148-L158) (using criteria operator or in code)
+- Modify column data: [`ProcessColumn`](https://github.com/DevExpress/dataprocessingapi-mvp-example/blob/main/CodeSamples/Program.cs#L186-L197)
+- Filter data: [`Filter`](https://github.com/DevExpress/dataprocessingapi-mvp-example/blob/main/CodeSamples/Program.cs#L111-L121) (using criteria operator or in code)
+- Sort data: [`Sort`](https://github.com/DevExpress/dataprocessingapi-mvp-example/blob/main/CodeSamples/Program.cs#L199-L211)
+- Manage columns: `SelectColumns`, [`RenameColumns`](https://github.com/DevExpress/dataprocessingapi-mvp-example/blob/main/CodeSamples/Program.cs#L160-L172), [`RemoveColumn`](https://github.com/DevExpress/dataprocessingapi-mvp-example/blob/main/CodeSamples/Program.cs#L174-L183)/`RemoveColumns`
 
 ### Analyze Data
 
-- TopN: `Top`, `Bottom`
-- Data aggregation: `Aggregate`
+- TopN: [`Top`](https://github.com/DevExpress/dataprocessingapi-mvp-example/blob/main/CodeSamples/Program.cs#L236-L245), `Bottom`
+- Data aggregation: [`Aggregate`](https://github.com/DevExpress/dataprocessingapi-mvp-example/blob/main/CodeSamples/Program.cs#L216-L233)
 
 ### Upload Data
 
-- Upload data to a stream that contains an XLSX file: `ToExcel`
-- Upload data to a JSON string: `ToJsonString`
-- Upload data to a .NET object: `ToDataTable`, `ToEnumerable`
+- Upload data to a stream that contains an XLSX file: [`ToExcel`](https://github.com/DevExpress/dataprocessingapi-mvp-example/blob/main/CodeSamples/Program.cs#L250-L258)
+- Upload data to a JSON string: [`ToJsonString`](https://github.com/DevExpress/dataprocessingapi-mvp-example/blob/main/CodeSamples/Program.cs#L260-L267)
+- Upload data to a .NET object: [`ToDataTable`](https://github.com/DevExpress/dataprocessingapi-mvp-example/blob/main/CodeSamples/Program.cs#L52), [`ToEnumerable`](https://github.com/DevExpress/dataprocessingapi-mvp-example/blob/main/CodeSamples/Program.cs#L277-L285)
 
 ### Debug
 
-- Get data for each step in the processed data flow: `Debug`
+- Get data for each step in the processed data flow: [`Debug`](https://github.com/DevExpress/dataprocessingapi-mvp-example/blob/main/CodeSamples/Program.cs#L289-L301)
 
 ## Performance
 

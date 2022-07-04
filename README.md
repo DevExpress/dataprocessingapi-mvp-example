@@ -1,6 +1,6 @@
 # DevExpress Data Processing API (MVP)
 
-> DevExpress Data Processing API is a prototype (MVP) of a new product and is therefore not yet a part of the DevExpress product line.
+> DevExpress Data Processing API is a prototype (MVP) of a new product and is therefore not yet a part of the DevExpress product line. The prototype supports only v21.2 and is not production-ready. Use it at your own risk.
 
 **DevExpress Data Processing API** is a .NET library that allows you to convert your data (including ETL and data analysis) into usable and desired form.
 
@@ -123,18 +123,6 @@ Our experiments showed that DevExpress Data Processing API can be faster or equa
 
 > Note that we made a number of assumptions in the MVP implementation which do not fully reveal the performance. At the same time, performance can depend on many factors (for example, just-in-time (JIT) compilation). If you encounter performance issues, please fell free to describe your scenario in our [Support Center](https://supportcenter.devexpress.com/ticket/list).
 
-## Documentation
-
-- [Data-Processing API (MVP)](https://docs.devexpress.com/Dashboard/403793/common-features/advanced-analytics/data-processing-api-mvp)
-
 ## Product Development Plans
-If we decide to release the product, we plan to develop in the following directions:
 
-- Support more popular data sources and a variety of upload methods.
-- Add more features to solve the most popular ETL and analytics problems.
-- Create tools for developers to simplify the creating and debugging of data flows, including the development of Visual Studio built-in tools.
-- Performance optimization.
-- Improve diagnostic logging and error output.
-- Integration with DevExpress controls: Winforms, WPF, Blazor (as ASP.NET Core Backend).
-
-Your opinion matters to us. Please share your thoughts in comments in our blog post: [.NET Data Processing API - First Community-Sourced Scenarios Addressed](https://community.devexpress.com/blogs/analytics/archive/2021/12/22/data-processing-api-test-the-early-prototype.aspx).
+Our customers did not show much interest in this solution. At present, we have no plans to develop it further. Should market demand change, we will certainly revisit this and publish announcements/posts on our website.
